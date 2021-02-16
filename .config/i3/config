@@ -180,3 +180,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Enable touchpad
+exec --no-startup-id xinput --set-prop "DELL07B7:00 044E:120A Touchpad" "libinput Tapping Enabled" 1
