@@ -187,3 +187,6 @@ exec --no-startup-id xinput --set-prop "DELL07B7:00 044E:120A Touchpad" "libinpu
 # Set wallpaper
 exec --no-startup-id feh --bg-fill ~/Pictures/Firefox_wallpaper.png
 
+# Set keybind for screenshot
+bindsym Print exec gnome-screenshot
+
