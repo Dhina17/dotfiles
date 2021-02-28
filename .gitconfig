@@ -1,0 +1,14 @@
+[user]
+	name = Dhina17
+	email = dhinalogu@gmail.com
+[alias]
+	s = status
+	cp = cherry-pick
+	r = rebase
+	ck = checkout
+	p = push
+	c = commit
+	pl = pull
+	d = diff
+[credential]
+	helper = store
