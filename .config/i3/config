@@ -190,3 +190,6 @@ exec --no-startup-id feh --bg-fill ~/Pictures/Firefox_wallpaper.png
 # Set keybind for screenshot
 bindsym Print exec gnome-screenshot
 
+# Brightness
+bindsym $mod + F11 exec xbacklight -dec 5
+bindsym $mod + F12 exec xbacklight -inc 5
