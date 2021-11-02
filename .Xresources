@@ -1,5 +1,5 @@
 Xft.dpi: 110
-st.font: JetBrains Mono SemiBold-13
+st.font: JetBrains Mono-13
 
 !! Set the background, foreground and cursor colors as below for st (terminal):
 !! Dracula:
