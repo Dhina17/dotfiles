@@ -12,3 +12,5 @@
 	d = diff
 [credential]
 	helper = store
+[review "review.lineageos.org"]
+        username = Dhina_17
