@@ -19,6 +19,7 @@ cp -r .  $USER_DIR
 # Install grub themes
 git clone https://github.com/dracula/grub ${GRUB_THEME_DIR}
 sudo echo GRUB_THEME="${GRUB_THEME_DIR}/dracula/theme.txt" >> /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # Install GTK themes
 git clone https://github.com/dracula/gtk ${THEMES_DIR}
