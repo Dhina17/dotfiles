@@ -5,6 +5,7 @@ set -e
 USER_DIR="/home/dhina17"
 GRUB_THEME_DIR="${USER_DIR}/.grub/themes/dracula"
 THEMES_DIR="${USER_DIR}/.themes/dracula-gtk"
+WALLS_DIR="${USER_DIR}/wallpapers"
 
 # System update
 sudo pacman -Syu --noconfirm
@@ -21,3 +22,6 @@ sudo echo GRUB_THEME="${GRUB_THEME_DIR}/dracula/theme.txt" >> /etc/default/grub
 
 # Install GTK themes
 git clone https://github.com/dracula/gtk ${THEMES_DIR}
+
+# Import wallpapers
+git clone https://github.com/dracula/wallpaper ${WALLS_DIR}
