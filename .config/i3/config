@@ -187,7 +187,7 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id xinput --set-prop "ELAN0504:01 04F3:3091 Touchpad" "libinput Tapping Enabled" 1 
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/arch.png
+exec --no-startup-id feh --bg-fill ~/wallpapers/arch.png
 
 # Set keybind for screenshot
 bindsym Print exec gnome-screenshot -f /home/dhina17/Pictures/Screenshot-$(date +%Y-%m-%d-%H:%M:%S).png
