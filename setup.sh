@@ -11,7 +11,7 @@ WALLS_DIR="${USER_DIR}/wallpapers"
 sudo pacman -Syu --noconfirm
 
 # Install git
-sudo pacman -S --nconfirm git
+sudo pacman -S --noconfirm git
 
 # Move all dotfiles to the user dir
 cp -r .  $USER_DIR
