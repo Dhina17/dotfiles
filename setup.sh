@@ -20,6 +20,9 @@ sudo pacman -S --noconfirm base-devel git \
 # Setup i3 with xinit
 sudo echo "exec i3" >> /etc/X11/xinit/xinitrc
 
+# Setup primary output. Needed for nm-applet tray.
+xrandr --output eDP --primary
+
 # Install yay
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
