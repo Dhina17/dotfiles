@@ -15,7 +15,7 @@ sudo pacman -S --noconfirm base-devel git \
         xorg xorg-xinit xf86-video-amdgpu mesa \
         i3-wm i3status \
         ttf-jetbrains-mono noto-fonts \
-        feh nm-applet dmenu \
+        feh nm-applet dmenu lxappearance \
         firefox telegram-desktop discord
 
 # Setup i3 with xinit
