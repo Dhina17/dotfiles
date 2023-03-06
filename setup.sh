@@ -11,7 +11,7 @@ WALLS_DIR="${USER_DIR}/wallpapers"
 sudo pacman -Syu --noconfirm
 
 # Install required packages
-sudo pacman -S --noconfirm base-devel git \
+sudo pacman -S --noconfirm base-devel git zsh \
         xorg xorg-xinit xf86-video-amdgpu mesa \
         i3-wm i3status \
         ttf-jetbrains-mono noto-fonts \
@@ -56,3 +56,16 @@ git clone https://github.com/dracula/gtk ${THEMES_DIR}
 
 # Import wallpapers
 git clone https://github.com/dracula/wallpaper ${WALLS_DIR}
+
+# zsh
+chsh -s $(which zsh)
+# Oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Setup powerlevel10k theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Install auto-suggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# Install syntax highligting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# Finalize the setup
+source ~/.zshrc
