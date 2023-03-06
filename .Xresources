@@ -1,4 +1,4 @@
-Xft.dpi: 110
+Xft.dpi: 127
 st.font: JetBrains Mono-13
 
 !! Set the background, foreground and cursor colors as below for st (terminal):
