@@ -11,7 +11,7 @@ WALLS_DIR="${USER_DIR}/wallpapers"
 sudo pacman -Syu --noconfirm
 
 # Install required packages
-sudo pacman -S --noconfirm base-devel git zsh \
+sudo pacman -S --noconfirm base-devel git zsh rsync \
         xorg xorg-xinit xf86-video-amdgpu mesa \
         i3-wm i3status \
         ttf-jetbrains-mono noto-fonts \
@@ -44,7 +44,7 @@ cd ..
 rm -rf luke-st
 
 # Move all dotfiles to the user dir
-cp -r .  $USER_DIR
+rsync -av --progress --exclude=".git" --exclude="*.sh" --exclude="*.md"  ./ $USER_DIR/
 
 # Install grub themes
 git clone https://github.com/dracula/grub ${GRUB_THEME_DIR}
