@@ -15,7 +15,8 @@ sudo pacman -S --noconfirm base-devel git \
         xorg xorg-xinit xf86-video-amdgpu mesa \
         i3-wm i3status \
         ttf-jetbrains-mono noto-fonts \
-        feh nm-applet dmenu
+        feh nm-applet dmenu \
+        firefox telegram-desktop discord
 
 # Setup i3 with xinit
 sudo echo "exec i3" >> /etc/X11/xinit/xinitrc
@@ -30,8 +31,9 @@ makepkg -si --noconfirm
 cd ..
 rm -rf yay-git
 
-# Install ly (display manager)
-yay -S --noconfirm ly
+# Install required packages from AUR
+# ly - display manager
+yay -S --noconfirm ly android-studio visual-studio-code-bin
 
 # Install luke-st (terminal) from my fork
 git clone https://github.com/Dhina17/luke-st
