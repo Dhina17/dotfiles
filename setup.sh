@@ -17,7 +17,7 @@ sudo pacman -S --noconfirm base-devel git \
         ttf-jetbrains-mono noto-fonts \
         feh nm-applet dmenu lxappearance \
         firefox telegram-desktop discord \
-        nano mousepad
+        nano mousepad pcmanfm 
 
 # Setup i3 with xinit
 sudo echo "exec i3" >> /etc/X11/xinit/xinitrc
