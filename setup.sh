@@ -15,7 +15,7 @@ sudo pacman -S --noconfirm base-devel git zsh rsync \
         xorg xorg-xinit xf86-video-amdgpu mesa \
         i3-wm i3status \
         ttf-jetbrains-mono noto-fonts \
-        feh nm-applet dmenu lxappearance \
+        feh network-manager-applet dmenu lxappearance \
         firefox telegram-desktop discord \
         nano mousepad pcmanfm 
 
