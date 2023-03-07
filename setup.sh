@@ -11,7 +11,7 @@ WALLS_DIR="${USER_DIR}/wallpapers"
 sudo pacman -Syu --noconfirm
 
 # Install required packages
-sudo pacman -S --noconfirm base-devel git zsh rsync \
+sudo pacman -S --noconfirm base-devel git zsh rsync wget \
         xorg xorg-xinit xf86-video-amdgpu mesa \
         i3-wm i3status \
         ttf-jetbrains-mono noto-fonts \
