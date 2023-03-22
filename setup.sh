@@ -15,7 +15,7 @@ sudo pacman -S --noconfirm base-devel git zsh rsync wget \
         xorg xorg-xinit xf86-video-amdgpu mesa \
         i3-wm i3status \
         ttf-jetbrains-mono noto-fonts \
-        feh network-manager-applet dmenu lxappearance \
+        feh network-manager-applet dmenu lxappearance flameshot \
         firefox telegram-desktop discord \
         nano mousepad pcmanfm \
         pulseaudio pavucontrol

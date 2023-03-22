@@ -190,7 +190,7 @@ exec --no-startup-id xinput --set-prop "ELAN0504:01 04F3:3091 Touchpad" "libinpu
 exec --no-startup-id feh --bg-fill ~/wallpapers/first-collection/arch.png
 
 # Set keybind for screenshot
-bindsym Print exec gnome-screenshot -f /home/dhina17/Pictures/Screenshot-$(date +%Y-%m-%d-%H:%M:%S).png
+bindsym Print exec flameshot gui
 
 # Brightness
 #bindsym $mod + F11 exec xbacklight -dec 5
