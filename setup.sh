@@ -17,7 +17,7 @@ sudo pacman -S --noconfirm base-devel git zsh rsync wget \
         ttf-jetbrains-mono noto-fonts \
         feh network-manager-applet dmenu lxappearance flameshot \
         firefox telegram-desktop discord \
-        nano mousepad pcmanfm \
+        nano micro mousepad pcmanfm \
         pulseaudio pavucontrol
 
 # Setup i3 with xinit
