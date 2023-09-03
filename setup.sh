@@ -13,7 +13,7 @@ sudo pacman -Syu --noconfirm
 # Install required packages
 sudo pacman -S --noconfirm base-devel git zsh rsync wget \
         xorg xorg-xinit xf86-video-amdgpu mesa \
-        i3-wm i3status \
+        i3-wm i3status alacritty \
         ttf-jetbrains-mono noto-fonts \
         feh network-manager-applet dmenu lxappearance flameshot \
         firefox telegram-desktop discord \
@@ -39,13 +39,6 @@ rm -rf yay-git
 # Install required packages from AUR
 # ly - display manager
 yay -S --noconfirm ly android-studio visual-studio-code-bin
-
-# Install luke-st (terminal) from my fork
-git clone https://github.com/Dhina17/luke-st
-cd luke-st
-sudo make install
-cd ..
-rm -rf luke-st
 
 # Move all dotfiles to the user dir
 rsync -av --progress --exclude=".git" --exclude="*.sh" --exclude="*.md"  ./ $USER_DIR/
