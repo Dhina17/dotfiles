@@ -6,6 +6,7 @@ USER_DIR="/home/dhina17"
 GRUB_THEME_DIR="${USER_DIR}/.grub/themes/dracula"
 THEMES_DIR="${USER_DIR}/.themes/dracula-gtk"
 WALLS_DIR="${USER_DIR}/wallpapers"
+ALACRITTY_CONFIG_DIR="${USER_DIR}/.config/alacritty"
 
 # System update
 sudo pacman -Syu --noconfirm
@@ -53,6 +54,11 @@ git clone https://github.com/dracula/gtk ${THEMES_DIR}
 
 # Import wallpapers
 git clone https://github.com/dracula/wallpaper ${WALLS_DIR}
+
+# Import alacritty themes
+ALACRITTY_THEMES_DIR="${ALACRITTY_CONFIG_DIR}/themes"
+mkdir -p ${ALACRITTY_THEMES_DIR}
+git clone https://github.com/alacritty/alacritty-theme ${ALACRITTY_THEMES_DIR}
 
 # zsh
 chsh -s $(which zsh)
