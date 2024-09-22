@@ -31,7 +31,7 @@
         "group/settings",
 //"wlr/taskbar",
         "group/quicklinks",
-"hyprland/window",
+        //"hyprland/window",
         "custom/empty"
     ],
 
