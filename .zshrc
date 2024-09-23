@@ -220,3 +220,4 @@ fi
 ### CUSTOM ####
 export CC_WRAPPER=$(which ccache)
 export USE_CCACHE=1
+export CCACHE_DIR=/mnt/ccache
