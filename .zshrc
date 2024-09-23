@@ -216,3 +216,7 @@ else
         echo "Start Hyprland with command Hyprland"
     fi
 fi
+
+### CUSTOM ####
+export CC_WRAPPER=$(which ccache)
+export USE_CCACHE=1
