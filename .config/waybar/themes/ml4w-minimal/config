@@ -67,7 +67,7 @@
 
     // Modules Center
     "modules-center": [
-        "hyprland/window",
+"hyprland/window",
         "custom/empty"
     ],
 
@@ -75,15 +75,15 @@
     "modules-right": [
         "custom/updates",
         "pulseaudio",
-        //"backlight",
+//"backlight",
         "bluetooth",
         "battery", 
-        "network",
+"network",
         "group/hardware",
         "group/tools",
         "custom/exit",
         "clock",
-        "tray",
+"tray",
         "custom/ml4w-welcome"
     ]
 }
